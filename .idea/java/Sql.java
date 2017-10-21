@@ -1,6 +1,8 @@
 public class Sql {
-    SELECT companyName, count(userId) as users
-    FROM COMPANY
+    SELECT companyName as c
+    from company,
+    (SELECT count(userId) as users
     INNER JOIN BRANCH ON COMPANY.companyId = BRANCH.companyId
-    INNER JOIN USERS ON BRANCH.branchId = USERS.branchId;
+    INNER JOIN USERS ON BRANCH.branchId = USERS.branchId
+    where company.companyId = c.companyId);
 }

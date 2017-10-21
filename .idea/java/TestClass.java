@@ -26,8 +26,8 @@ public class TestClass {
 
     public static void main(String[] args) {
         char[][] arr = new char[][]{
+                {'x', '#', 'x'},
                 {'x', '#', '#'},
-                {'x', 'x', '#'},
                 {'x', 'x', 'x'}
         };
         int[][] result = testTask(arr);
