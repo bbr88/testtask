@@ -13,6 +13,7 @@ public class TestClass {
                 //i+1 j - 1 j + 1
                 if (i + 1 < arr.length && arr[i+1][j] == '#') minesCounter++;
                 if (i + 1 < arr.length && j + 1 < arr[i].length && arr[i+1][j+1] == '#') minesCounter++;
+                if (i + 1 < arr.length && j - 1 > 0 && arr[i + 1][j - 1] == '#') minesCounter++;
 
                 if (j + 1 < arr[i].length && arr[i][j+1] == '#') minesCounter++;
                 if (j > 0 && arr[i][j - 1] == '#') minesCounter++;

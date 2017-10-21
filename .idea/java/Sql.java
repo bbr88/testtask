@@ -1,3 +1,4 @@
+/*
 public class Sql {
     SELECT companyId as c
     from company,
@@ -6,3 +7,4 @@ public class Sql {
     INNER JOIN USERS ON BRANCH.branchId = USERS.branchId
     where company.companyId = c) as users;
 }
+*/
